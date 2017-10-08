@@ -15,7 +15,7 @@ Erklärung einzelner Objekte und Klassen:
 
 
 H1: zuerst ein H für alles 
-
+H2: Überschriften der Sektionen
 
 
 container: zentrierte Box für Inhalte, v.a. auf der Home- Seite.
@@ -23,9 +23,9 @@ container: zentrierte Box für Inhalte, v.a. auf der Home- Seite.
 nav: Navigation bar (nav-top & nav-bottom)
 
 btn = Buttons (btn-voll, btn-leer und btn-medium)
-
-
-
+    voll ="scrollt auf eigener Seite hin und her
+    medium = Leitet zu anderer Unterseite, ist zentriert
+    leer = noch keine Funktion
 
 posting-box: "Große" Box aller Postings
 
@@ -67,6 +67,13 @@ h1{
     font-size: 120%;
     font-weight: 400;
     top: 9vh;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 400;    
 }
 
 section{
@@ -122,6 +129,7 @@ header img{
 
 .nav-top ul a{
     text-decoration: none;
+    position: absolute;
     color: white;
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
@@ -148,7 +156,7 @@ header img{
     font-weight: 400;
 }
 
-.btn-voll{
+.btn-voll, .btn-medium{
     background-color: #d44c5c;    
 }
 
@@ -156,6 +164,12 @@ header img{
     background-color: #982a37;
     border-color: #982a37;
 }
+
+.btn-medium:hover{
+    background-color: #982a37;
+    border-color: #982a37;
+}
+
 
 .btn-leer{
     transition: background-color 0.4s;    
@@ -166,23 +180,20 @@ header img{
     border-color: #982a37;
 }
 
-.btn-medium{
-    position: absolute;
-    margin-left: 2309px;;
-    font-weight: 700;
-}
+
 
 
 /*----------------Footer---------------*/
 
 
 
-footer,{
+footer{
     background-color: #d44c5c;
 }
 
 footer nav{
-    text-align: center;    
+    text-align: center;
+    margin-left: -50px;
 }
 
 footer nav ul li{

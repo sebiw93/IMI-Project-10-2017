@@ -2,12 +2,9 @@
 layout: standard
 ---
 
-<section id="landing">
+<section id="upper-bar">
     <header>
-        <a href="{{site.baseurl}}/">
-        <img id="IMI" src="{{site.baseurl}}/media/imgs/icons_logos/IMI_1.png">
-        </a>
-        {% include nav.html navclass='nav-top' %}
+        
     </header>
     <div class="container">
     </div>
@@ -19,12 +16,10 @@ layout: standard
 <section id="posts">
     <div class="container">
 
-<h1>Recent Reads</h1>
+<h2>Library</h2>
 <hr>
-<br>
-    
     <div class="posting-box">
-    <br>
+    <br class="small" />
     {% for page in site.posts limit:5 %}
         <br>
         <br>
@@ -36,18 +31,19 @@ layout: standard
                     <div class="post-desc">
                         <h1><a href="">{{page.title | markdownify}}</a></h1>
                         <br>
-                        <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+                        <span><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span>
+                        <br>
                         <br>
                         {{page.meta}}
                     </div>
                     {% endfor %}
                 </div>
         
-                 <div class="container">
-                    <form method="post" action="#" class="btn-medium">
-                        <a href="articles.html" class="btn-medium">Read more</a>
-                    </form>    
-                </div>
+
+                    <form method="post" action="#">
+                    <a href="{{site.baseurl}}/" class="btn btn-medium">Back</a>
+                    </form> 
+
     </div>     
     </div>
         

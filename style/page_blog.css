@@ -1,5 +1,7 @@
 #upper-bar{
-    background-color: black;
-    top: 50px;
-    margin-top: 1150px;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/media/imgs/sections/universe.jpg);
+    background-position: center;
+    position: static;
+    background-attachment: fixed;
 }

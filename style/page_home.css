@@ -3,7 +3,6 @@
 
 
 #landing{
-    top:0;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/media/imgs/sections/data.jpg);
     background-position: center;
@@ -13,8 +12,24 @@
 }
 
 
+#slogan{
+    font-size: 185%;
+    color: white;
+    font-weight: 300;
+}
 
+#slogan_buttons{
+    margin-top: 200px;
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 5%;
+}
 
+#signup{
+    margin-top: 450px;
+    position: absolute;
+    right: 5%; 
+}
 
 /*----------------Posts---------------*/
 
@@ -32,6 +47,7 @@
 }
 
 .post-desc{
+    line-height: 85%;
     width: 79%;
     display: inline-block;
     text-align: justify;
@@ -43,8 +59,11 @@
     margin-bottom: 30px;    
 }
 
-.posting-box{
-    max-width: 1000px;    
+
+
+.posting-box form{
+    text-align: center;
+
 }
 
 #posts h1 a{
@@ -52,10 +71,20 @@
     color: #d44c5c;
     font-weight: 400;
     margin-bottom: 5px;
-    font-size: 140%;
+    font-size: 180%;
+    transition: 0.4s;
+}
+
+#posts h1 a:hover{
+    color: #f77f8d;
 }
 
 #posts p{
-    font-size: 110%;
     margin-right: 50px;
     }
+
+.date{
+    font-size: 80%;
+    color: #d44c5c;
+    font-weight: 400;
+}

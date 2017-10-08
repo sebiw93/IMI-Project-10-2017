@@ -1,0 +1,14 @@
+{% assign author = site[page.author] %}
+{% if author %}
+  <span>
+    Written by {{ author.name }}
+  </span>
+<br>
+<span>
+    {{ author.bio }}
+  </span>
+{% else %}
+  <span>
+    Written by Sebastian Weber
+  </span>
+{% endif %}

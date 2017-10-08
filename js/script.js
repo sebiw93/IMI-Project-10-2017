@@ -1,6 +1,13 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
+    
+    $(".btn").click(function(){
+    $("html, body").animate({scrollTop:$("#posts").offset().top}, 1000);    
+    });
 
-    $(".js-familie").click(function(){
+    
+    
+
+    $(".slogan").click(function(){
     $("html, body").animate({scrollTop:$("#familie-section").offset().top}, 1000);    
     });
 
@@ -24,4 +31,4 @@
     $("html, body").animate({scrollTop:$(".nachricht-section").offset().top}, 1000);    
     });
     
-});*/
+});

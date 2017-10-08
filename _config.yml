@@ -1,2 +1,10 @@
 baseurl: /IMI-blog
 exclude: ['README.md']
+sebastian_weber:
+    name: Sebastian Weber
+    email: sebastian.weber1993@aol.com
+    bio: This is Sebastians bio.
+author_due:
+    name: Author due
+    email: nomailyet.com
+    bio: This is the co-authors bio.
