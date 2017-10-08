@@ -22,7 +22,7 @@ container: zentrierte Box für Inhalte, v.a. auf der Home- Seite.
 
 nav: Navigation bar (nav-top & nav-bottom)
 
-btn = Buttons (btn-voll, btn-leer und bnt-medium)
+btn = Buttons (btn-voll, btn-leer und btn-medium)
 
 
 
@@ -43,7 +43,7 @@ post-desc: Beschreibung der Einzel- Posts
 /*----------------Basic Setup---------------*/
 
 *{
-    margin: 0px auto;
+    margin: 0px;
 }
 
 hr{
@@ -60,7 +60,7 @@ body{
 
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 h1{
@@ -82,21 +82,14 @@ p{
 
 /*----------------Navigation---------------*/
 
-nav ul{
-    list-style: none;
-    position: absolute;
-}
-
 nav ul li{
     display: inline-block;
     margin-left: 20px;
-    font-size: 55%;
-    color: #ffffff;    
+    font-size: 55%; 
 }
 
 nav ul li a{
     text-decoration: none;
-    color: white;
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
     transition: border-bottom 1.0s;  
@@ -117,7 +110,11 @@ header img{
     margin-left: 5%;
 }
 
+
+
 .nav-top{
+    list-style: none;
+    position: absolute;
     top: 9vh;
     right: 5%;
     font-size: 130%
@@ -131,6 +128,9 @@ header img{
     transition: border-bottom 1.0s;
 }
 
+.nav-top li a{
+    color: white;
+}
 
 
 
@@ -166,34 +166,56 @@ header img{
     border-color: #982a37;
 }
 
-.bnt-medium{
-    text-align: center;
+.btn-medium{
+    position: absolute;
+    margin-left: 2309px;;
     font-weight: 700;
 }
 
 
 /*----------------Footer---------------*/
 
-.nav-bottom ul{
-    margin: 40px auto;
+
+
+footer,{
+    background-color: #d44c5c;
+}
+
+footer nav{
+    text-align: center;    
+}
+
+footer nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer nav ul li:last-child{
+    margin-top: 30px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #813852;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition:border-bottom 7.0s;
+    transition:color 0.3s;
+}
+
+footer a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    
+}
+
+footer p{
+    padding-top: 100px;
+    padding-bottom: 40px;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0;
+    color: #813852;
 }
-
-.nav-bottom ul li{
-    margin-right: 20px;
-}
-
-.nav-bottom ul li a{
-    margin-right: 20px;
-}
-
-
-
-
-
 
 
 

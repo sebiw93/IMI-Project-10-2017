@@ -1,37 +1,55 @@
 ---
 layout: standard
 ---
-    
 
-<section id="overview">
-    Posts are here
+<section id="landing">
+    <header>
+        <a href="{{site.baseurl}}/">
+        <img id="IMI" src="{{site.baseurl}}/media/imgs/icons_logos/IMI_1.png">
+        </a>
+        {% include nav.html navclass='nav-top' %}
+    </header>
+    <div class="container">
+    </div>
 </section>
 
 
-Posts
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
+<section id="posts">
+    <div class="container">
 
-
-<!--<ol>
-    {% for planets in site.data.planet-types limit:2 %}
-    <li>
-        <a href="">{{planets.title}}</a>
-        {{planets.content | markdownify }}
-    </li>
-    {% endfor %}
-</ol>-->
-
-
-
-
+<h1>Recent Reads</h1>
+<hr>
+<br>
+    
+    <div class="posting-box">
+    <br>
+    {% for page in site.posts limit:5 %}
+        <br>
+        <br>
+    <div class="post-box">
+        <a href="#">
+                    <img src="{{page.image}}">
+                    </a>
+                    
+                    <div class="post-desc">
+                        <h1><a href="">{{page.title | markdownify}}</a></h1>
+                        <br>
+                        <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+                        <br>
+                        {{page.meta}}
+                    </div>
+                    {% endfor %}
+                </div>
+        
+                 <div class="container">
+                    <form method="post" action="#" class="btn-medium">
+                        <a href="articles.html" class="btn-medium">Read more</a>
+                    </form>    
+                </div>
+    </div>     
+    </div>
+        
+       
+</section>  

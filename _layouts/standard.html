@@ -47,11 +47,17 @@
     
     
 <!--THIS IS THE FOOTER OF ALL PAGES    -->
-    
-<footer>
-    <p>Das hier ist der Footer, darunter ist die Navigationsbar:</p>
-    {% include nav.html navclass='nav-bottom' %}
-</footer>
-    
-</body>
+
+    <footer>
+        
+        
+        {% include nav.html navclass='nav-bottom' %}
+        <p>
+        Copyright &copy; 2017 by Sebastian Weber <br>All rights reserved.
+        </p>
+    </footer>
+    <!---------------------------------------->  
+    <script src="{{site.baseurl}}/js/jquery-3.2.1.min.js"></script>
+    <script src="{{site.baseurl}}/js/script.js"></script>
+    </body>
 </html>
