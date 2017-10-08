@@ -1,0 +1,60 @@
+
+/*----------------Landing---------------*/
+
+
+#landing{
+    top:0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/media/imgs/sections/data.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+
+
+/*----------------Posts---------------*/
+
+
+#posts img{
+    display: inline-block;
+    width: 15%;
+    border-radius: 30%;
+    margin-right: 2%;
+    transition: transform 0.3s;
+}
+
+#posts img:hover{
+    transform: scale(1.17);
+}
+
+.post-desc{
+    width: 79%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 90%;
+    vertical-align: top;
+}
+.post-box{
+    margin-bottom: 30px;
+    
+}
+.posting-box{
+    max-width: 1000px;    
+}
+
+#posts h1 a{
+    text-decoration: none;
+    color: #d44c5c;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 140%;
+}
+
+#posts p{
+    font-size: 110%;
+    margin-right: 50px;
+    }

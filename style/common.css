@@ -1,11 +1,18 @@
 /*
 
+
+
 ÜBERSICHT:
 
 In der Common.css finden sich alle generellen Styles, die für alle Seiten gültig sind.
 
 
+
+
+
+
 Erklärung einzelner Objekte und Klassen:
+
 
 H1: zuerst ein H für alles 
 
@@ -15,7 +22,17 @@ container: zentrierte Box für Inhalte, v.a. auf der Home- Seite.
 
 nav: Navigation bar (nav-top & nav-bottom)
 
-btn = Buttons (btn-voll & btn-leer)
+btn = Buttons (btn-voll, btn-leer und bnt-medium)
+
+
+
+
+posting-box: "Große" Box aller Postings
+
+post-box: Bos der Einzel- Postings
+
+post-desc: Beschreibung der Einzel- Posts
+
 
 */
 
@@ -68,7 +85,6 @@ p{
 
 nav ul{
     list-style: none;
-    display: inline-block;
     position: absolute;
 }
 
@@ -151,7 +167,10 @@ header img{
     border-color: #982a37;
 }
 
-
+.bnt-medium{
+    text-align: center;
+    font-weight: 700;
+}
 
 
 /*----------------Footer---------------*/
@@ -172,17 +191,6 @@ header img{
     margin-right: 20px;
 }
 
-
-
-#landing{
-    top:0;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/media/imgs/sections/data.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
 
 
 
