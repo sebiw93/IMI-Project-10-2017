@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    
+    
+<!--THIS IS THE HEADER OF ALL PAGES    -->
+
+<head>
+    <meta charset="utf-8">
+    <title>IMI-Blog</title>
+    
+    <!--Common for all pages    -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="{{site.baseurl}}/style/common.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/style/queries.css" rel="stylesheet">
+    
+    <!--Specific css    -->
+    <link href="{% if page.url contains 'blog' %}'{{site.baseurl}}/style/page_blog.css'{% endif %}" rel="stylesheet">
+    
+</head>
+<body>
+    
+    
+    
+<header>
+        <a href="{{site.baseurl}}/">
+        <img id="IMI" src="{{site.baseurl}}/media/imgs/icons_logos/IMI_1.png">
+        </a>
+        {% include nav.html navclass='nav-top' %}
+</header>
+    
+    
+    
+    
+    
+<!--THIS IS THE CONTENT OF ALL PAGES    -->    
+    
+{{content}}
+    
+    
+    
+    
+    
+    
+<!--THIS IS THE FOOTER OF ALL PAGES    -->
+    
+<footer>
+    <p>Das hier ist der Footer, darunter ist die Navigationsbar:</p>
+    {% include nav.html navclass='nav-bottom' %}
+</footer>
+    
+</body>
+</html>

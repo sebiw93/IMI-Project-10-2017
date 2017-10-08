@@ -1,0 +1,45 @@
+---
+layout: standard
+---
+    
+
+<section id="landing">
+    <header>
+        <a href="{{site.baseurl}}/">
+        <img id="IMI" src="{{site.baseurl}}/media/imgs/icons_logos/IMI_1.png">
+        </a>
+        {% include nav.html navclass='nav-top' %}
+</header>
+Section uno
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="posts">
+Section due
+
+<ol>
+    {% for post in site.posts limit:4 %}
+    <li>
+        <a href="">{{post.title}}</a>
+        {{post.content | markdownify }}
+        {{post.meta}}
+    </li>
+    {% endfor %}
+</ol>
+    
+</section>
+
+
+
+<section id="feedback">
+    Section tres
+</section>

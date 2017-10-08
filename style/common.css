@@ -1,0 +1,194 @@
+/*
+
+ÜBERSICHT:
+
+In der Common.css finden sich alle generellen Styles, die für alle Seiten gültig sind.
+
+
+Erklärung einzelner Objekte und Klassen:
+
+H1: zuerst ein H für alles 
+
+
+
+container: zentrierte Box für Inhalte, v.a. auf der Home- Seite.
+
+nav: Navigation bar (nav-top & nav-bottom)
+
+btn = Buttons (btn-voll & btn-leer)
+
+*/
+
+
+
+
+
+/*----------------Basic Setup---------------*/
+
+*{
+    margin: 0px auto;
+}
+
+hr{
+    margin: 20px auto;
+    width: 25%;
+}
+
+body{
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+    color: #696969;   
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 120%;
+    font-weight: 400;
+    top: 9vh;
+}
+
+section{
+    margin-bottom: 80px;
+}
+
+p{
+    font-size: 80%;
+}
+
+
+
+
+
+/*----------------Navigation---------------*/
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 55%;
+    color: #ffffff;    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: border-bottom 1.0s;  
+}
+
+nav ul a:hover{
+    border-bottom: 2px solid #d44c5c;
+}
+
+/*----------------Header---------------*/
+
+
+header img{
+    position: absolute;
+    height: 70px;
+    border-radius: 0%;
+    margin-top: 75px;
+    margin-left: 5%;
+}
+
+.nav-top{
+    top: 9vh;
+    right: 5%;
+    font-size: 130%
+}
+
+.nav-top ul a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: border-bottom 1.0s;
+}
+
+
+
+
+/*----------------Buttons---------------*/
+
+
+.btn{
+    text-decoration: none;
+    color:white;
+    border: 2px solid #d44c5c;
+    padding: 10px 12px;
+    margin-right: 10px;
+    border-radius: 25px;
+    transition: background-color 0.4s;
+    font-weight: 400;
+}
+
+.btn-voll{
+    background-color: #d44c5c;    
+}
+
+.btn-voll:hover{
+    background-color: #982a37;
+    border-color: #982a37;
+}
+
+.btn-leer{
+    transition: background-color 0.4s;    
+}
+
+.btn-leer:hover{
+    background-color: #982a37;
+    border-color: #982a37;
+}
+
+
+
+
+/*----------------Footer---------------*/
+
+.nav-bottom ul{
+    margin: 40px auto;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+.nav-bottom ul li{
+    margin-right: 20px;
+}
+
+.nav-bottom ul li a{
+    margin-right: 20px;
+}
+
+
+
+#landing{
+    top:0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/media/imgs/sections/data.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
