@@ -1,0 +1,36 @@
+---
+layout: standard
+---
+
+<section id="upper-bar">
+    <header>
+        
+    </header>
+
+</section>
+
+
+<section class="bloggy">
+    <div class="container">
+    <div class="posthead">
+        <h1>{{page.title}}</h1>
+        <br>
+        <p class="date">{{ page.date | date: "%b %-d, %Y" }} || by {{site[page.author].name}}</p>
+    </div>
+<br>
+<br>
+<text>{{content}}</text>
+    </div>
+</section>
+
+
+
+
+    <!--INCLUDE AUTHORS    -->       
+    {% include author.html %}
+
+
+<footer>
+
+    
+</footer>

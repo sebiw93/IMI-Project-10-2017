@@ -1,14 +1,36 @@
+<section class="author">
 {% assign author = site[page.author] %}
 {% if author %}
+
+    <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
   <span>
-    Written by {{ author.name }}
+        <h4>The author |</h4>
+        <h5>{{ author.name }}</h5>
   </span>
 <br>
-<span>
+<span class="desc">
     {{ author.bio }}
-  </span>
+</span>
+    
+    
+   
 {% else %}
+     <a href="mailto:sebastian.weber1993@aol.com"><img src="{{site.baseurl}}/media/imgs/authors/sebastianweber.jpg" ></a>
   <span>
     Written by Sebastian Weber
   </span>
+    <br>
 {% endif %}
+    
+
+</section>
+
+<div class="posting-box">
+                    <form method="post" action="#">
+                    <a href="{{site.baseurl}}/page_blog/blog.html" class="btn btn-medium">Read more</a>
+                    </form>   
+</div>
+
+                    <br>
+                    <br>
+                    <br>

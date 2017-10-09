@@ -2,9 +2,11 @@ baseurl: /IMI-blog
 exclude: ['README.md']
 sebastian_weber:
     name: Sebastian Weber
-    email: sebastian.weber1993@aol.com
-    bio: This is Sebastians bio.
+    email: mailto:sebastian.weber1993@aol.com
+    bio: This is Sebastians bio. And it is so nice because its nice, yo! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    pic: 'sebastianweber.jpg'
 author_due:
-    name: Author due
-    email: nomailyet.com
+    name: Austin Powers
+    email: mailto:nomailyet.com
     bio: This is the co-authors bio.
+    pic: 'austinpowers.jpg'

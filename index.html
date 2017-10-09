@@ -36,50 +36,54 @@ layout: standard
 
 
 
-
 <section id="posts">
     <div class="container">
 
 <br>
 <h2>Recent Reads</h2>
 <hr>
+        
+        
     <div class="posting-box">
     <br>
-    {% for page in site.posts limit:5 %}
+    {% for page in site.posts limit:4 %}
         <br>
         <br>
     <div class="post-box">
-        <a href="#">
+        <a href="{{site.baseurl}}/{{page.permalink}}">
                     <img src="{{page.image}}">
                     </a>
                     
                     <div class="post-desc">
-                        <h1><a href="{{site.baseurl}}/page_blog/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+                        <h1><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
                         <br>
                         <span><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span>
                         <br>
                         <br>
                         {{page.meta}}
                     </div>
-                    {% endfor %}
+            {% endfor %}
                 </div>
                 <br>
                 <br>
-                 
+        
                     
+        <form method="post" action="#">
+        <a href="{{site.baseurl}}/page_blog/blog.html" class="btn btn-medium">Read more</a>
+        </form>  
             
     </div>     
     </div>
-                    <form method="post" action="#">
-                    <a href="{{site.baseurl}}/page_blog/blog.html" class="btn btn-medium">Read more</a>
-                    </form>    
+                      
        
 </section>  
         
- 
+
 
 
 
 <section id="feedback">
 
 </section>
+
+
