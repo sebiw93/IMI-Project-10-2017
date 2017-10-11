@@ -3,7 +3,8 @@ layout: bloggy
 title: 'Behavioral microtargeting in German and Austrian elections'
 meta: Desc
 source: random source
-category: focus_mktgeneral
+picsource: random source
+category: Marketing general
 image: /media/imgs/articles/topic1.jpeg
 author: author_due
 permalink: marketing/behavioral-microtargeting

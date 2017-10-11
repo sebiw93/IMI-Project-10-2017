@@ -14,14 +14,91 @@ layout: standard
 
 
 <section id="posts">
-    <div class="container">
-
+<div class="container">
 <br>
 <h2>Library</h2>
-<hr>
+<hr>       
+<div class="posting-box">  
+
+        
+    
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Jump to month</button>
+<div id="myDropdown" class="dropdown-content">
+    {% for page in site.posts %}
+    {% unless page.next %}
+        <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
+    {% else %}
+    {% capture year %}{{ page.date | date: '%Y %b' }}{% endcapture %}
+    {% capture nyear %}{{ page.next.date | date: '%Y %b' }}{% endcapture %}
+    {% if year != nyear %}
+        <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
+            {% endif %}
+            {% endunless %}
+    {% endfor %}
+
+</div>
+</div> 
+    
+        
+ <div class="post">
+	<ul>
+	  {% for page in site.posts %}
+	    {% unless page.next %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="A-{{ page.date | date: '%b%Y' }}">
+	      <h3>{{ page.date | date: '%b %Y' }}</h3>
+        <br>
+        </div>
+        
+	    {% else %}
+	      {% capture year %}{{ page.date | date: '%Y %b' }}{% endcapture %}
+	      {% capture nyear %}{{ page.next.date | date: '%Y %b' }}{% endcapture %}
+	      {% if year != nyear %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="A-{{ page.date | date: '%b%Y' }}">
+	        <h3>{{ page.date | date: '%b %Y' }}</h3>
+        <br>
+        </div>
+	      {% endif %}
+	    {% endunless %}
+            
+        <br>
+	    <div class="post-box">
+        <br>
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+                    <img src="{{page.image}}">
+                    </a>
+                    
+                    <div class="post-desc">
+                        <h1><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+                        <br>
+                        <span><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span>
+                        <br>
+                        <br>
+                        {{page.meta}}
+                    </div>
+            {% endfor %}
+        </div>
+	</ul>
+</div>    
+        <form method="post" action="#">
+                    <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
+                    </form>    
+</div>         
+</div>       
+</section>  
+        
+    
         
         
-    <div class="posting-box">
+<!--    <div class="posting-box">
     <br>
     {% for page in site.posts %}
         <br>
@@ -48,8 +125,4 @@ layout: standard
                     <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
                     </form>    
             
-    </div>     
-    </div>
-                    
-       
-</section>  
+    </div> -->    

@@ -1,9 +1,10 @@
 ---
 layout: bloggy
 title: 'Is SEO already dead?'
-meta: Desc
+meta: Let discuss!
 source: random source
-category: focus_mktgeneral
+picsource: random source
+category: Marketing general
 image: /media/imgs/articles/SEO.jpeg
 author: sebastian_weber
 permalink: marketing/is-seo-dead

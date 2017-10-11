@@ -2,3 +2,49 @@
 layout: standard
 ---
 
+
+
+<section id="upper-bar">
+    <header>
+        
+    </header>
+
+</section>
+
+
+<section>
+<div class="container">
+    The independent Marketing Intelligence Blog was started in October 2017 by Marketing students of IMC Krems, Austria. The blog aims to provide an objective view on the developments of Big Data in the Marketing branch. We cover tech topics as well as team management, but the focus still lies on Marketing itself.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+</section>
+
+  
+
+{{site[sebastian.weber].name}}
+
+
+
+<section class="author">
+{% assign author = site[sebastian_weber] %}
+    <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
+  <span>
+        <h4>The author |</h4>
+        <h5>{{ author.name }}</h5>
+  </span>
+<br>
+<span class="desc">
+    {{ author.bio }}
+</span>
+</section>

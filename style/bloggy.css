@@ -2,11 +2,12 @@
     font-size: 150%;
 }
 
-.posthead p{
+.postheadbottom p{
     color: #813852;
+    font-weight: 400;
 }
 
-.posthead h1{
+.postheadbottom h1{
     font-size: 35px;
     font-weight: 700;
     color: #813852
