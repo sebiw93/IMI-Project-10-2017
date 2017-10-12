@@ -14,7 +14,9 @@ layout: standard
 
 <section>
 <div class="container">
-    The independent Marketing Intelligence Blog was started in October 2017 by Marketing students of IMC Krems, Austria. The blog aims to provide an objective view on the developments of Big Data in the Marketing branch. We cover tech topics as well as team management, but the focus still lies on Marketing itself.
+    <h4>About the blog:</h4>
+    <br>
+    <span>The independent Marketing Intelligence Blog was started in October 2017 by Marketing students of IMC Krems, Austria. The blog aims to provide an objective view on the developments of Big Data in the Marketing branch. We cover tech topics as well as team management, but the focus still lies on Marketing itself.</span>
     <br>
     <br>
     <br>
@@ -23,28 +25,53 @@ layout: standard
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h4>About the authors:</h4>
+    
 </div>
 </section>
 
-  
-
-{{site[sebastian.weber].name}}
 
 
+<section class="author" style="margin-bottom: 0px;">
 
-<section class="author">
-{% assign author = site[sebastian_weber] %}
+    
+    <div id="Sebastian Weber">
+{% assign author = site.sebastian_weber %}
     <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
-  <span>
-        <h4>The author |</h4>
-        <h5>{{ author.name }}</h5>
+  <span><a href="mailto:sebastian.weber1993@aol.com" style="text-decoration: none">
+        <h4></h4>
+        <h5 style="margin-left: 200px;">{{ author.name }}</h5>
+      </a>
   </span>
 <br>
 <span class="desc">
     {{ author.bio }}
 </span>
+    </div>
+    
+    
+     <div id="Austin Powers">
+{% assign author = site.author_due %}
+    <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
+  <span><a href="mailto:sebastian.weber1993@aol.com" style="text-decoration: none">
+        <h4></h4>
+        <h5 style="margin-left: 200px;">{{ author.name }}</h5>
+      </a>
+      </span>
+<br>
+<span class="desc">
+    {{ author.bio }}
+</span>
+    </div>
+    
 </section>
+
+
+<div class="posting-box" style="margin-bottom: 80px;">    
+                    <br>
+                    <br>
+                    <br>
+                    <form method="post" action="#">
+                    <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
+                    </form> 
+                    </div>

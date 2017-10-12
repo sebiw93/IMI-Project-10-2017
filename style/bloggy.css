@@ -1,5 +1,37 @@
+
 .bloggy text{
     font-size: 150%;
+}
+
+.bloggy img{
+    height: 35vh;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 68.5%;
+    border: 3px solid white;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+.bloggy figcaption{
+    text-align: right;
+    font-size: 140%;
+    font-weight: 300;
+    color: white;
+    position: relative;
+    margin-top: -115px;
+    margin-right: 34%;
+}
+
+.post-box h4{
+    padding-top: 1500px;
+    margin-top:  800px;
+}
+
+
+.postheadbottom{
+    margin-right: 30%;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .postheadbottom p{
@@ -8,7 +40,7 @@
 }
 
 .postheadbottom h1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     color: #813852
 }
@@ -50,3 +82,11 @@
     font-weight: 400;
     margin-top: 20px;
 }
+
+
+
+
+
+
+
+

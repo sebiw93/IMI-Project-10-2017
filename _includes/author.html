@@ -3,9 +3,10 @@
 {% if author %}
 
     <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
-  <span>
+  <span><a href={{ author.email }} style="text-decoration: none">
         <h4>The author |</h4>
         <h5>{{ author.name }}</h5>
+      </a>
   </span>
 <br>
 <span class="desc">
@@ -26,11 +27,7 @@
 </section>
 
 <div class="posting-box">
-                    <form method="post" action="#">
+                    <form method="post" action="#" style="margin-bottom: 80px;">
                     <a href="{{site.baseurl}}/page_blog/blog.html" class="btn btn-medium">Read more</a>
                     </form>   
 </div>
-
-                    <br>
-                    <br>
-                    <br>

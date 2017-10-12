@@ -1,10 +1,10 @@
 ---
 layout: bloggy
-title: 'Underestimated metrics: The retention rate'
-meta: Desc
+title: 'Underestimated metrics: 10 reasons for the retention rate'
+meta: Retaining customers costs up to 12 times less than acquiring new customers. Still, the retention rate has lost much of its fame, so we give you 10 good reasons to incorporate the retention rate accordingly.
 source: random source
 picsource: random source
-category: Marketing general
+category: '#Marketing general'
 image: /media/imgs/articles/topic2.jpeg
 author: author_due
 permalink: marketing/metrics-retention
