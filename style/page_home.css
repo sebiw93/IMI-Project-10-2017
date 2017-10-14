@@ -26,7 +26,7 @@
 }
 
 #signup{
-    margin-top: 450px;
+    margin-top: 465px;
     position: absolute;
     right: 5%; 
 }
@@ -47,20 +47,20 @@
 }
 
 .post-desc{
-    width: 65%;
     display: inline-block;
     text-align: justify;
     font-size: 90%;
     vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.post-desc span div{
+    width: 60%;
 }
 
 .post-desc h5{
     font-weight: 300;
     color: grey;
-}
-
-.post-box{
-    margin-bottom: 30px;    
 }
 
 .post-box a{
@@ -71,6 +71,10 @@
 .posting-box form{
     text-align: center;
 
+}
+
+#posts h1{
+    text-align: left;
 }
 
 #posts h1 a{
@@ -87,6 +91,7 @@
 }
 
 #posts p{
+    text-align: justify;
     margin-right: 50px;
     }
 

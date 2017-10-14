@@ -4,3 +4,5 @@ Creation of a digital Marketing Blog
 Wichtige Befehle: 
 (1) jekyll serve --watch --baseurl ""
 (2) git push origin gh-pages
+
+DOMAIN: https://secure.ipage.com/register/registration.bml
