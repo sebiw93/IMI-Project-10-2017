@@ -53,5 +53,3 @@ window.onload = function () {
         $("html, body").animate({scrollTop:$("#autoscrollhere").offset().top}, 1000); 
     }
 
-
-

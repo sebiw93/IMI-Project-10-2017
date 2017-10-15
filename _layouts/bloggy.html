@@ -11,15 +11,15 @@ layout: standard
 
 
 <section class="bloggy">
-    <img src="{{page.image}}">
+    <img id="bloggyimg" src="{{page.image}}">
     <figcaption>{{page.category}}</figcaption>
     <div class="container">
     <div class="postheadbottom">
         <h1>{{page.title}}</h1>
         <br>
         <p>{{ page.date | date: "%b %-d, %Y" }} || by {{site[page.author].name}}</p>
-    </div>
-        
+</div>        
+<br>
 <br>
 <br>
 <br>
@@ -29,8 +29,6 @@ layout: standard
     </div>
 </section>
 
-<br>
-<br>
 <br>
 <section class="bloggy">
     <div class="container">

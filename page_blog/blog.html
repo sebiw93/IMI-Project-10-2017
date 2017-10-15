@@ -43,6 +43,7 @@ layout: standard
         
  <div class="post">
 	<ul>
+        <div class="posting-box">
 	  {% for page in site.posts %}
 	    {% unless page.next %}
         <br>
@@ -70,7 +71,7 @@ layout: standard
 	    {% endunless %}
             
         <br>
-	    <div class="post-box">
+    <div class="post-box">
         <br>
         <a href="{{site.baseurl}}/{{page.permalink}}">
                     <img src="{{page.image}}">
@@ -87,6 +88,11 @@ layout: standard
                     </div> 
             {% endfor %}
         </div>
+        
+        <br>
+        <br>            
+            
+    </div>     
 	</ul>
      <br>
      <br>

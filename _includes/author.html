@@ -1,4 +1,4 @@
-<section class="author">
+<section class="author {{include.authorclass}}">
 {% assign author = site[page.author] %}
 {% if author %}
 
@@ -25,6 +25,35 @@
     
 
 </section>
+
+<section class="author {{include.authorclass}}" id="coauthor">
+{% assign author2 = site[page.author2] %}
+{% if author2 %}
+
+    <a href={{ author2.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author2.pic }}"></a>
+  <span><a href={{ author2.email }} style="text-decoration: none">
+        <h4>Co- author |</h4>
+        <h5>{{ author2.name }}</h5>
+      </a>
+  </span>
+<br>
+<span class="desc">
+    {{ author2.bio }}
+</span>
+    
+    
+   
+{% else %}
+<section style="padding-top: -1300px;">
+</section>
+{% endif %}
+    
+
+</section>
+
+
+
+
 
 <div class="posting-box">
                     <form method="post" action="#" style="margin-bottom: 80px;">

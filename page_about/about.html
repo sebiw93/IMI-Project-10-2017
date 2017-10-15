@@ -1,5 +1,7 @@
 ---
 layout: standard
+author: sebastian_weber
+author2: author_due
 ---
 
 
@@ -12,7 +14,7 @@ layout: standard
 </section>
 
 
-<section>
+<section id="abouttheblog">
 <div class="container">
     <h4>About the blog:</h4>
     <br>
@@ -32,46 +34,6 @@ layout: standard
 
 
 
-<section class="author" style="margin-bottom: 0px;">
-
-    
-    <div id="Sebastian Weber">
-{% assign author = site.sebastian_weber %}
-    <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
-  <span><a href="mailto:sebastian.weber1993@aol.com" style="text-decoration: none">
-        <h4></h4>
-        <h5 style="margin-left: 200px;">{{ author.name }}</h5>
-      </a>
-  </span>
-<br>
-<span class="desc">
-    {{ author.bio }}
-</span>
-    </div>
-    
-    
-     <div id="Austin Powers">
-{% assign author = site.author_due %}
-    <a href={{ author.email }}><img src="{{site.baseurl}}/media/imgs/authors/{{ author.pic }}"></a>
-  <span><a href="mailto:sebastian.weber1993@aol.com" style="text-decoration: none">
-        <h4></h4>
-        <h5 style="margin-left: 200px;">{{ author.name }}</h5>
-      </a>
-      </span>
-<br>
-<span class="desc">
-    {{ author.bio }}
-</span>
-    </div>
-    
+<section class="author" style="margin-bottom: -200px;">
+{% include author.html authorclass='author-about' %}
 </section>
-
-
-<div class="posting-box" style="margin-bottom: 80px;">    
-                    <br>
-                    <br>
-                    <br>
-                    <form method="post" action="#">
-                    <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
-                    </form> 
-                    </div>
