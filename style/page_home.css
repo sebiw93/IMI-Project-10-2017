@@ -48,7 +48,6 @@
 
 .post-desc{
     display: inline-block;
-    text-align: justify;
     font-size: 90%;
     vertical-align: top;
     margin-bottom: 10px;
@@ -70,7 +69,6 @@
 
 .posting-box form{
     text-align: center;
-
 }
 
 #posts h1{
@@ -91,7 +89,6 @@
 }
 
 #posts p{
-    text-align: justify;
     margin-right: 50px;
     }
 
@@ -100,7 +97,6 @@
     color: #d44c5c;
     font-weight: 400;
 }
-
 
 
 /*----------------Feedback---------------*/

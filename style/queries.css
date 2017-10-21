@@ -254,8 +254,13 @@
     
     #posts a img{
     width: 150px;
-
 }
+    
+
+    .post-desc{
+    width: 100%;
+    }
+    
 }
 
 
