@@ -43,6 +43,10 @@
     margin-left: 180px;;
 }
     
+    #meedia{
+        margin-right: 30%;
+    }
+    
 }
 
 
@@ -215,24 +219,8 @@
     margin-right: 30%;
     }
     
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -261,6 +249,31 @@
     width: 100%;
     }
     
+    .post-desc h1, .post-desc span{
+        font-size: 90%;
+    }
+    
+    .post-desc p{
+        width: 100%;
+    }
+    
+    .post-box{
+        margin-right: 0%;
+    }
+    
+    
+    .postheadbottom{
+    margin-right: 0%;
+}
+    
+    #meedia iframe, #meedia img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    
+
 }
 
 

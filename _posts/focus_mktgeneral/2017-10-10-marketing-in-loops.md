@@ -15,11 +15,13 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 <br>
 <br>
+<section id="meedia" style="margin-bottom: 40px;">
 <iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 <br>
-<img src="{{page.image1}}" style="height: 35vh;">
 <br>
 <br>
+<img width="300" height="300" src="{{page.image1}}">
+</section>
 15.10.2017 - 12:20 Uhr
 
 Tumulte bei der Frankfurter Buchmesse: Bei zwei voneinander unabhängigen Auftritten von Politikern kam es am Samstag zu körperlichen Auseinandersetzungen.

@@ -23,27 +23,27 @@ layout: standard
 <br>
         
 <!---------------------  RATING SYSTEM  ------------------------->
-        
-   
-        
-        
-        
+      
 <!--------------------------------------------------------------->
         
 <br>
 <br>
 <br>
 <br>
+<div id="meedia">
 <text>{{content}}</text>
     </div>
+        </div>
 </section>
 
 <br>
 <section class="bloggy">
     <div class="container">
+    {% if page.source %}
 <div class="postheadbottom">
         <p style="color: darkgray">Source(s): {{page.source}}</p>
     </div>
+    {% endif %}
     </div>
 </section>
 
