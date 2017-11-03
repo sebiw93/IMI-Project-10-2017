@@ -1,6 +1,6 @@
 ---
 layout: bloggy
-title: 'Behavioral microtargeting in German and Austrian elections'
+title: 'Microtargeting in German and Austrian elections'
 meta: The elections in Autria recently upset a large amount of voters sue to the fact, that behavioral targeting was used. What is common practise in the US for some years now, brings a new discussion on data protection to Europe. But what exactly did the political parties do? 
 source: random source
 category: '#Marketing general #Tech'
