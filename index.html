@@ -17,6 +17,7 @@ layout: standard
             <br>
             <a href="#" class="btn btn-voll">Read now</a>
         </div>
+        
        <!-- 
         <div id="signup">
             <a class="btn btn-leer">Sign up</a>
@@ -25,7 +26,34 @@ layout: standard
     </header>
     <div class="container">
     </div>
+    
+    
+    <div class="triangle"></div>
+    <a id="img_to_flip_hash" href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><img id="img_to_flip" src="{{site.baseurl}}/media/imgs/sections/marketing.jpeg"></a>         
+        
+    <script type="text/javascript">
+                (function() {     // function expression closure to contain variables
+                    var i = 0;
+                    var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", "{{site.baseurl}}/media/imgs/sections/tech.jpeg" ];
+                    var picshash = ["{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", "{{site.baseurl}}/page_blog_tech/blog_tech.html" ]
+                    var flipimage = document.getElementById('img_to_flip');
+                    var flipimagehash = document.getElementById('img_to_flip_hash');
+                    function toggle() {
+                        $("#img_to_flip").fadeOut(350);
+                        setTimeout(function(){ flipimage.src = pics[i]; }, 350);
+                        setTimeout(function(){ flipimagehash.href = picshash[i]; }, 350);
+                        $("#img_to_flip").fadeIn(700);
+                        i = (i + 1) % pics.length
+                        
+                    }
+                 
+                setInterval(toggle, 5500);
+                })();             // invoke the function expression
+        </script>
+    
 </section>
+
+
 
 
 
@@ -78,7 +106,7 @@ layout: standard
        
 </section>  
         
-<hr style="width: 100%">
+<hr style="width: 98%">
 
 <section id="feedback">
 

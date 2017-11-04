@@ -33,6 +33,25 @@
 
 /*----------------Posts---------------*/
 
+.triangle {
+  right: 0;
+  position: absolute;
+  margin-right: 0%;
+  padding-top: 25%;
+  margin-top: 20%;
+  border: solid rgba(212, 76, 92, 0.8);
+  border-left-width: 300px;
+  border-top-width: 30px;
+  border-top-color: transparent;
+}
+
+#img_to_flip{
+    position: absolute;
+    right: 1%;
+    margin-top: 25%;
+    width: 32vh;
+    height: 16vh;
+}
 
 #posts img{
     display: inline-block;

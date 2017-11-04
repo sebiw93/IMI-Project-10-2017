@@ -16,5 +16,6 @@ As the ranking criteria shift more and more towards machine learning- based rela
 <br>
 <h5>From keyword stuffing to content optmization</h5>
 <br>
-Yolo
+
+- kann mich nicht auf keywords verlassen, content muss der Suchanfrage 
 
