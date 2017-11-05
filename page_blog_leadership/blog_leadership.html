@@ -1,0 +1,146 @@
+---
+layout: standard
+---
+
+<title>Leadership- related articles</title>
+
+<section id="upper-bar">
+    <header>
+        
+    </header>
+    <div class="container">
+    </div>
+</section> 
+
+
+<section id="posts">
+<div class="container">
+<br>
+<h2 id="autoscrollhere">Library</h2>
+<hr>       
+<div class="posting-box">  
+
+<section id="categories_blog">
+
+<a href="{{site.baseurl}}/page_blog/blog.html"><h4>X</h4>#Leadership</a>
+
+</section>        
+    
+<div class="dropdown">
+    <button onmouseover="myFunction()" class="dropbtn">Jump to month</button>
+<div id="myDropdown" class="dropdown-content">
+    {% for page in site.posts %}
+    {% if page.category contains '#Leadership' %}
+    {% unless page.next %}
+        <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
+    {% else %}
+    {% capture year %}{{ page.date | date: '%Y %b' }}{% endcapture %}
+    {% capture nyear %}{{ page.next.date | date: '%Y %b' }}{% endcapture %}
+    {% if year != nyear %}
+        <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
+            {% endif %}
+            {% endunless %}
+    {% endif %}
+    {% endfor %}
+
+</div>
+</div> 
+    
+        
+ <div class="post">
+	<ul>
+        <div class="posting-box">
+	  {% for page in site.posts %}
+        {% if page.category contains '#Leadership' %}
+	    {% unless page.next %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="A-{{ page.date | date: '%b%Y' }}">
+	      <h3>{{ page.date | date: '%b %Y' }}</h3>
+        <br>
+        </div>
+        
+	    {% else %}
+	      {% capture year %}{{ page.date | date: '%Y %b' }}{% endcapture %}
+	      {% capture nyear %}{{ page.next.date | date: '%Y %b' }}{% endcapture %}
+	      {% if year != nyear %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="A-{{ page.date | date: '%b%Y' }}">
+	        <h3>{{ page.date | date: '%b %Y' }}</h3>
+        <br>
+        </div>
+	      {% endif %}
+	    {% endunless %}
+            
+        <br>
+    <div class="post-box">
+        <br>
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+                    <img src="{{page.image}}">
+                    </a>
+                    
+                    <div class="post-desc">
+                        <h1><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>   
+                        <span style="display: inline-block;margin-right:-40px"><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span><h5 style="display: inline-block">{{page.category}}</h5>
+                        <br>
+                        <br>
+                        <span style="font-weight: 400">{{page.meta}}</span>
+                        <br>
+                        <br>
+                    </div> 
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <br>
+        <br>            
+            
+    </div>     
+	</ul>
+     <br>
+     <br>
+     <br>
+</div>    
+                    <form method="post" action="#">
+                    <a href="{{site.baseurl}}/page_blog/blog.html" class="btn btn-medium">To Library</a>
+                    </form>    
+</div>         
+</div>       
+</section>  
+        
+    
+        
+        
+<!--    <div class="posting-box">
+    <br>
+    {% for page in site.posts %}
+        <br>
+        <br>
+    <div class="post-box">
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+                    <img src="{{page.image}}">
+                    </a>
+                    
+                    <div class="post-desc">
+                        <h1><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+                        <br>
+                        <span><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span>
+                        <br>
+                        <br>
+                        {{page.meta}}
+                    </div>
+            {% endfor %}
+                </div>
+                <br>
+                <br>
+                 
+                    <form method="post" action="#">
+                    <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
+                    </form>    
+            
+    </div> -->    

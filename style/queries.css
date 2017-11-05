@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1150px) {
     .post-desc{
-    width: 60%;
+    width: 50%;
     position: absolute;
     }
     
@@ -74,7 +74,7 @@
 }
     
     .post-desc{
-    width: 70%;
+    width: 60%;
     }
     
     .desc{
@@ -114,6 +114,13 @@
 
 
 @media only screen and (max-width: 767px) {
+    
+    .dropdown {
+    text-align: center;
+    margin: 20px;
+    padding-top: 220px;
+    margin-bottom: 65px;
+}
 
     
     .postheadbottom{
@@ -188,18 +195,52 @@
     margin-left: 10%;
 }
     
+    
+    #img_to_flip_hash, .triangle, .quad, #landing p{
+        display: none;
+    }
+    
+    #logoslogan ul{
+        display: block;
+        margin: -35px;
+    }
+    
+    #logoslogan ul li{
+    border: none;
+    margin-bottom: -16.5px;
+    }
+    
+    #slogan_buttons ul li{
+    border: none;
+    }
+    
+     #slogan_buttons{
+    top: 3.7vh;
+    }
+    
+    #slogan_buttons ul{
+    top: 12vh;
+    }
 
     
 }
 
 
 
-
-
-
     
 
 @media only screen and (min-width: 767px) {
+    
+    .dropdown {
+    margin-left: 85%;
+}
+    
+#logoslogan ul li{
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 120%;
+    }
+    
     #bloggyimg{
     position: absolute;
     margin-top: -10px;
@@ -229,6 +270,12 @@
 
 
 @media only screen and (max-width: 480px) {
+    
+    #logoslogan ul{
+        margin-top: 50px;
+        margin-left: -190px;
+    }
+    
     .author{
     margin-bottom: 380px;
 }
@@ -272,10 +319,9 @@
     }
 
 
-    
+
 
 }
-
 
 
 

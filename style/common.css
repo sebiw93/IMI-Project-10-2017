@@ -108,6 +108,19 @@ nav ul a:hover{
 
 /*----------------Header---------------*/
 
+#logoslogan{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    margin-left: 5%;
+    padding-left: 150px;
+    margin-top: 75px;
+}
+
+#logoslogan ul{
+    margin-left: -37px;
+    list-style: none;
+}
 
 header img{
     position: absolute;
@@ -116,8 +129,6 @@ header img{
     margin-top: 75px;
     margin-left: 5%;
 }
-
-
 
 .nav-top{
     list-style: none;

@@ -1,7 +1,9 @@
 ---
 layout: standard
 ---
-    
+
+<title>Most recent news on Marketing and Technology</title>
+
 
 <section id="landing">
     <header>
@@ -11,8 +13,22 @@ layout: standard
         
         {% include nav.html navclass='nav-top' %}
         
+        <div id="logoslogan">
+        <ul>
+        <li>Independent</li>
+        <li>Marketing</li>
+        <li>Intelligence</li>
+        <li>Blog</li>
+            </ul>
+        </div>
+        
         <div id="slogan_buttons">
-            <h1 id="slogan">Data. Marketing. Intelligence.</h1>
+            <ul id="sloganlist">
+            <a href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><li id="token_mktgeneral" style="color: #f77f8d">Marketing.</li></a>
+            <a href="{{site.baseurl}}/page_blog_tech/blog_tech.html"><li id="token_tech">Data.</li></a>
+            <a href="{{site.baseurl}}/page_blog_leadership/blog_leadership.html"><li id="token_leadership">Leadership.</li></a>
+            <a href="{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"><li id="token_inspiration">Inspiration.</li></a>
+            </ul>
             <br>
             <br>
             <a href="#" class="btn btn-voll">Read now</a>
@@ -24,30 +40,63 @@ layout: standard
         </div>
 -->
     </header>
-    <div class="container">
-    </div>
+
     
     
     <div class="triangle"></div>
-    <a id="img_to_flip_hash" href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><img id="img_to_flip" src="{{site.baseurl}}/media/imgs/sections/marketing.jpeg"></a>         
-        
+    <div class="quad"></div>
+    <a id="img_to_flip_hash" href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><img id="img_to_flip" src="{{site.baseurl}}/media/imgs/sections/marketing.jpeg">
+    <p id="img_to_flip_p">Explore the latest trends in Marketing & Communication.</p>
+    </a>    
     <script type="text/javascript">
                 (function() {     // function expression closure to contain variables
                     var i = 0;
-                    var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", "{{site.baseurl}}/media/imgs/sections/tech.jpeg" ];
-                    var picshash = ["{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", "{{site.baseurl}}/page_blog_tech/blog_tech.html" ]
+                    var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", "{{site.baseurl}}/media/imgs/sections/tech.jpeg", "{{site.baseurl}}/media/imgs/sections/leadership.jpg", "{{site.baseurl}}/media/imgs/sections/Inspiration.jpg"];
+                    var picshash = ["{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", "{{site.baseurl}}/page_blog_tech/blog_tech.html", "{{site.baseurl}}/page_blog_leadership/blog_leadership.html",  "{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"]
+                    var picsp = ["Explore the latest trends in Marketing & Communication.", "At the glipmse of a technological revolution? Discuss with us!", "How are the digital leaders paving the way for breakthough innovations?", "Inspireeeeeee!"]
+                    
                     var flipimage = document.getElementById('img_to_flip');
                     var flipimagehash = document.getElementById('img_to_flip_hash');
-                    function toggle() {
-                        $("#img_to_flip").fadeOut(350);
-                        setTimeout(function(){ flipimage.src = pics[i]; }, 350);
-                        setTimeout(function(){ flipimagehash.href = picshash[i]; }, 350);
-                        $("#img_to_flip").fadeIn(700);
-                        i = (i + 1) % pics.length
+                    var flipimagep = document.getElementById('img_to_flip_p');
+                    var sloganlist = document.getElementById('sloganlist');
+                    var token_tech = document.getElementById('token_tech');
+                    var token_mktgeneral = document.getElementById('token_mktgeneral');
+                    var token_leadership = document.getElementById('token_leadership');
+                    var token_inspiration = document.getElementById('token_inspiration');
+                    
+                    var picscategoryrow = [document.getElementById('token_mktgeneral'), document.getElementById('token_tech'), document.getElementById('token_leadership'), document.getElementById('token_inspiration')]
                         
+                    
+                    function toggle() {
+                        $("#img_to_flip").fadeOut(250);
+                        $("#img_to_flip_h6").fadeOut(250);
+                        $("#img_to_flip_p").fadeOut(250);
+                        
+                        token_tech.style.color = 'white';
+                        token_mktgeneral.style.color = 'white';
+                        token_leadership.style.color = 'white';
+                        token_inspiration.style.color = 'white';
+                        
+                        
+                        setTimeout(function(){ picscategoryrow[i].style.color = '#f77f8d'; }, 250);
+                        setTimeout(function(){ flipimage.src = pics[i]; }, 250);
+                        setTimeout(function(){ flipimagehash.href = picshash[i]; }, 250);
+                        setTimeout(function(){ flipimagep.innerHTML = picsp[i]; }, 250);
+                        
+                        $("#img_to_flip").fadeIn(800);
+                        $("#img_to_flip_p").fadeIn(2000);
+                        
+                        
+                        if (i < 3){
+                            i = (i + 1);
+                          } else{
+                            i = 0  
+                          }
+                        
+
+                    
                     }
-                 
-                setInterval(toggle, 5500);
+                setInterval(toggle, 4500);
                 })();             // invoke the function expression
         </script>
     

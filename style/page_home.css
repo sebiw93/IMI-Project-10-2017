@@ -25,21 +25,42 @@
     padding-left: 5%;
 }
 
+#slogan_buttons ul{
+margin-left: -40px;
+}
+
+#slogan_buttons ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    font-size: 160%;
+    margin-right: 4px;
+}
+
 #signup{
     margin-top: 465px;
     position: absolute;
     right: 5%; 
 }
 
-/*----------------Posts---------------*/
+.quad {
+  right: 2%;
+  position: absolute;
+  padding-top: 150px;
+  margin-top: 318px;
+  border: solid rgba(212, 76, 92, 0.7);
+  border-left-width: 345px;
+  border-top-width: 30px;
+}
 
 .triangle {
   right: 0;
   position: absolute;
   margin-right: 0%;
-  padding-top: 25%;
-  margin-top: 20%;
-  border: solid rgba(212, 76, 92, 0.8);
+  padding-top: 350px;
+  margin-top: 270px;
+  border: solid rgba(212, 76, 92, 0.7);
   border-left-width: 300px;
   border-top-width: 30px;
   border-top-color: transparent;
@@ -47,11 +68,25 @@
 
 #img_to_flip{
     position: absolute;
-    right: 1%;
-    margin-top: 25%;
-    width: 32vh;
-    height: 16vh;
+    right: 3%;
+    margin-top: 329px;
+    width: 40vh;
+    height: 20vh;
+    border: 1px solid rgba(255, 255, 255, 0.3)
 }
+
+#landing p{
+    position: absolute;
+    margin-top: 520px;
+    right: 3%;
+    font-size: 100%;
+    color: white;
+    width: 200px;
+    text-align: right;
+}
+
+/*----------------Posts---------------*/
+
 
 #posts img{
     display: inline-block;
