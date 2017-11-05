@@ -69,6 +69,8 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    max-height: 230px; /*Provide height in pixels or in other units as per your layout*/
+    overflow-y: auto; /*Provide an auto overflow to diaply scroll*/
 }
 
 /* Links inside the dropdown */

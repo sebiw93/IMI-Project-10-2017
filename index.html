@@ -40,20 +40,104 @@ layout: standard
         </div>
 -->
     </header>
+    
+    
+
+<!-------------------------    Teaser (rechts) Anfang    -------------------------------->
 
     
     
+    
+    
     <div class="triangle"></div>
-    <div class="quad"></div>
+<!--    <div class="quad"></div>-->
     <a id="img_to_flip_hash" href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><img id="img_to_flip" src="{{site.baseurl}}/media/imgs/sections/marketing.jpeg">
     <p id="img_to_flip_p">Explore the latest trends in Marketing & Communication.</p>
-    </a>    
+    </a>   
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="marketingteaser">
+<!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
+    {% for page in site.posts %}
+    {% if page.category contains '#Marketing' %}
+    <p>Latest article in #Marketing: </p> 
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+        <h1 style="padding-top: 20px;"><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+        </a >
+    {% break%}
+    {% endif %}
+    {% endfor %}
+    </div> 
+    
+    <div id="techteaser" style="display: none;">
+<!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
+    {% for page in site.posts %}
+    {% if page.category contains '#Tech' %}
+    <p>Latest article in #Tech: </p> 
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+        <h1 style="padding-top: 20px;"><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+        </a >
+        
+    {% break%}
+    {% endif %}
+    {% endfor %}
+    </div> 
+    
+    <div id="leaderteaser" style="display: none;">
+<!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
+    {% for page in site.posts %}
+    {% if page.category contains '#Leadership' %}
+    <p>Latest article in #Leadership: </p> 
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+        <h1 style="padding-top: 20px;"><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+        </a >
+    {% break%}
+    {% endif %}
+    {% endfor %}
+    </div> 
+    
+    <div id="inspireteaser" style="display: none;">
+<!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
+    {% for page in site.posts %}
+    {% if page.category contains '#Inspiration' %}
+    <p>Latest article in #Inspiration:  </p> 
+        <a href="{{site.baseurl}}/{{page.permalink}}">
+        <h1 style="padding-top: 20px;"><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
+        </a >
+    {% break%}
+    {% endif %}
+    {% endfor %}
+    </div> 
+    
+    
+    
+
+
+    
     <script type="text/javascript">
                 (function() {     // function expression closure to contain variables
                     var i = 0;
-                    var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", "{{site.baseurl}}/media/imgs/sections/tech.jpeg", "{{site.baseurl}}/media/imgs/sections/leadership.jpg", "{{site.baseurl}}/media/imgs/sections/Inspiration.jpg"];
-                    var picshash = ["{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", "{{site.baseurl}}/page_blog_tech/blog_tech.html", "{{site.baseurl}}/page_blog_leadership/blog_leadership.html",  "{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"]
-                    var picsp = ["Explore the latest trends in Marketing & Communication.", "At the glipmse of a technological revolution? Discuss with us!", "How are the digital leaders paving the way for breakthough innovations?", "Inspireeeeeee!"]
+                    var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", 
+                                "{{site.baseurl}}/media/imgs/sections/tech.jpeg", 
+                                "{{site.baseurl}}/media/imgs/sections/leadership.jpg", 
+                                "{{site.baseurl}}/media/imgs/sections/Inspiration.jpg"];
+                    var picshash = [
+                        "{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", 
+                        "{{site.baseurl}}/page_blog_tech/blog_tech.html", 
+                        "{{site.baseurl}}/page_blog_leadership/blog_leadership.html",  
+                        "{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"
+                    ]
+                    var picsp = [
+                        "Explore the latest trends in Marketing & Communication.", 
+                        "At the glipmse of a technological revolution? Discuss with us!", 
+                        "How are the digital leaders paving the way for breakthough innovations?", 
+                        "Get inspired by a repertoire of futuristic ideas and brain- teasing food for thought."]
                     
                     var flipimage = document.getElementById('img_to_flip');
                     var flipimagehash = document.getElementById('img_to_flip_hash');
@@ -64,27 +148,60 @@ layout: standard
                     var token_leadership = document.getElementById('token_leadership');
                     var token_inspiration = document.getElementById('token_inspiration');
                     
-                    var picscategoryrow = [document.getElementById('token_mktgeneral'), document.getElementById('token_tech'), document.getElementById('token_leadership'), document.getElementById('token_inspiration')]
-                        
+                    var marketingteaser = document.getElementById('marketingteaser');
+                    var techteaser = document.getElementById('techteaser');
+                    var leaderteaser = document.getElementById('leaderteaser');
+                    var inspireteaser = document.getElementById('inspireteaser');
+                    
+                    var picscategoryrow = [
+                        document.getElementById('token_mktgeneral'), 
+                        document.getElementById('token_tech'), 
+                        document.getElementById('token_leadership'), 
+                        document.getElementById('token_inspiration'),
+                    ]
+                    
+                    var teaserrow = [
+                        document.getElementById('marketingteaser'), 
+                        document.getElementById('techteaser'), 
+                        document.getElementById('leaderteaser'), 
+                        document.getElementById('inspireteaser'),
+                    ]
+                    
+                    var teaserhashrow = [
+                        '#marketingteaser', 
+                        '#techteaser', 
+                        '#leaderteaser', 
+                        '#inspireteaser',
+                    ]
+                    
+                    
                     
                     function toggle() {
+                        
+                        var currentteaser = teaserhashrow[i];
+                        
                         $("#img_to_flip").fadeOut(250);
                         $("#img_to_flip_h6").fadeOut(250);
                         $("#img_to_flip_p").fadeOut(250);
+                        $(currentteaser).fadeOut(250);
+                        
+                        
                         
                         token_tech.style.color = 'white';
                         token_mktgeneral.style.color = 'white';
                         token_leadership.style.color = 'white';
                         token_inspiration.style.color = 'white';
                         
+                        marketingteaser.style.display = 'none';
+                        techteaser.style.display = 'none';
+                        leaderteaser.style.display = 'none';
+                        inspireteaser.style.display = 'none';
+
                         
-                        setTimeout(function(){ picscategoryrow[i].style.color = '#f77f8d'; }, 250);
+                        setTimeout(function(){ picscategoryrow[i].style.color = '#f77f8d'; }, 50);
                         setTimeout(function(){ flipimage.src = pics[i]; }, 250);
                         setTimeout(function(){ flipimagehash.href = picshash[i]; }, 250);
                         setTimeout(function(){ flipimagep.innerHTML = picsp[i]; }, 250);
-                        
-                        $("#img_to_flip").fadeIn(800);
-                        $("#img_to_flip_p").fadeIn(2000);
                         
                         
                         if (i < 3){
@@ -93,10 +210,12 @@ layout: standard
                             i = 0  
                           }
                         
-
-                    
-                    }
-                setInterval(toggle, 4500);
+                        var currentteaser = teaserhashrow[i]; //Aktualisierung
+                        $("#img_to_flip").fadeIn(800);
+                        $("#img_to_flip_p").fadeIn(1500);
+                        $(currentteaser).fadeIn(3000);
+                        }
+                setInterval(toggle, 5000);
                 })();             // invoke the function expression
         </script>
     
@@ -104,7 +223,7 @@ layout: standard
 
 
 
-
+<!-------------------------    Teaser Ende    -------------------------------->
 
 
 

@@ -3,7 +3,7 @@ layout: bloggy
 title: 'Testpage Inspiration'
 meta: Desc
 source: random source
-category: '#Inspiration #Tech'
+category: '#Inspiration #Tech #Marketing general #Leadership'
 image: /media/imgs/articles/topic3.jpeg
 author: author_due
 permalink: inspiration/test1

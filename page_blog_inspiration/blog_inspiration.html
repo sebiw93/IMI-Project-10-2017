@@ -30,7 +30,6 @@ layout: standard
     <button onmouseover="myFunction()" class="dropbtn">Jump to month</button>
 <div id="myDropdown" class="dropdown-content">
     {% for page in site.posts %}
-    {% if page.category contains '#Inspiration' %}
     {% unless page.next %}
         <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
     {% else %}
@@ -40,7 +39,6 @@ layout: standard
         <a href="#" class="{{ page.date | date: '%b%Y' }}">{{ page.date | date: '%b %Y' }}</a>
             {% endif %}
             {% endunless %}
-    {% endif %}
     {% endfor %}
 
 </div>
@@ -51,7 +49,6 @@ layout: standard
 	<ul>
         <div class="posting-box">
 	  {% for page in site.posts %}
-        {% if page.category contains '#Inspiration' %}
 	    {% unless page.next %}
         <br>
         <br>
@@ -76,7 +73,7 @@ layout: standard
         </div>
 	      {% endif %}
 	    {% endunless %}
-            
+        {% if page.category contains '#Inspiration' %}    
         <br>
     <div class="post-box">
         <br>

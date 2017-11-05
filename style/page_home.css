@@ -58,7 +58,7 @@ margin-left: -40px;
   right: 0;
   position: absolute;
   margin-right: 0%;
-  padding-top: 350px;
+  padding-top: 450px;
   margin-top: 270px;
   border: solid rgba(212, 76, 92, 0.7);
   border-left-width: 300px;
@@ -68,21 +68,40 @@ margin-left: -40px;
 
 #img_to_flip{
     position: absolute;
-    right: 3%;
+    right: 2%;
+    margin-right: 15px;
     margin-top: 329px;
     width: 40vh;
     height: 20vh;
-    border: 1px solid rgba(255, 255, 255, 0.3)
+    border: 10px solid rgba(247, 127, 141, 0.6)
 }
 
 #landing p{
     position: absolute;
-    margin-top: 520px;
+    margin-top: 540px;
     right: 3%;
     font-size: 100%;
     color: white;
-    width: 200px;
+    width: 205px;
+    margin-right: 13px;
     text-align: right;
+}
+
+
+#marketingteaser, #techteaser, #leaderteaser, #inspireteaser{
+    padding-top: 110px;
+}
+
+#marketingteaser h1, #techteaser h1, #leaderteaser h1, #inspireteaser h1{
+    font-style: italic;
+    font-size: 145%;
+    font-family: sans-serif;
+    hyphens: auto; 
+
+}
+
+#marketingteaser p, #techteaser p, #leaderteaser p, #inspireteaser p{
+    font-size: 85%;
 }
 
 /*----------------Posts---------------*/
