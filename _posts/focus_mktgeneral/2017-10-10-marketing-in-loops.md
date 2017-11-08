@@ -22,6 +22,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <br>
 <img width="300" height="300" src="{{page.image1}}">
 </section>
+<p>
 15.10.2017 - 12:20 Uhr
 
 Tumulte bei der Frankfurter Buchmesse: Bei zwei voneinander unabhängigen Auftritten von Politikern kam es am Samstag zu körperlichen Auseinandersetzungen.
@@ -29,6 +30,6 @@ Tumulte bei der Frankfurter Buchmesse: Bei zwei voneinander unabhängigen Auftri
 Dabei sollen Rechte den Frankfurter Abgeordneten Nico Wehnemann (DIE PARTEI) angegriffen haben. Außerdem kam es zu einer Protestaktion gegen den AfD-Politiker Björn Höcke.
 
 Am Abend veröffentlichte Wehnemann selbst ein Foto von dem Angriff bei Twitter, schrieb dazu: „Ein Nazi auf mir drauf. Privater Sicherheitsdienst streckt mich nieder. Polizei schaut zu.“
-
+</p>
 
 
