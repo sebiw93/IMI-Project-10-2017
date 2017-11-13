@@ -34,6 +34,31 @@ post-box: Bos der Einzel- Postings
 post-desc: Beschreibung der Einzel- Posts
 
 
+
+
+
+
+Design- Schema:
+
+(A) Red- ish:
+
+1: #f77f8d
+2: #d44c5c
+3: #982a37
+
+
+(B) Counterpart:
+
+4: #26A1E9
+
+(C) Supporting:
+
+5: #696969
+6: white
+7: black
+
+
+
 */
 
 
@@ -92,7 +117,7 @@ p{
 nav ul li{
     display: inline-block;
     margin-left: 20px;
-    font-size: 55%; 
+    font-size: 60%; 
 }
 
 nav ul li a{
@@ -219,7 +244,7 @@ footer nav ul li:last-child{
 
 footer a{
     text-decoration: none;
-    color: #813852;
+    color: #982a37;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
     transition:border-bottom 7.0s;
@@ -236,7 +261,7 @@ footer p{
     padding-top: 100px;
     padding-bottom: 40px;
     text-align: center;
-    color: #813852;
+    color: #982a37;
 }
 
 

@@ -7,13 +7,13 @@
 }
     
 .post h3{
-    color: #813852;
+    color: #982a37;
     font-family: sans-serif
 }
 
 .post hr{
     margin-left: 0px; 
-    color: #813852    
+    color: #982a37;    
 }
 
 #categories_blog{
@@ -24,7 +24,7 @@
 
 #categories_blog a{
     text-decoration: none;
-    color: #813852;
+    color: #982a37;
     font-size: 90%;
 }
 
