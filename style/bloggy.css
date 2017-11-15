@@ -86,12 +86,18 @@
 }
 
 #bloggylist{
-    margin-left: 80px;
-    line-height: 40px;
+    margin-left: 40px;
+    font-size: 80%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#bloggylist li{
+    margin-top: 20px;
 }
 
 #bloggylistb{
-    color: #f77f8d;
+    color: #982a37;
 }
 
 #bloggyhighlight{

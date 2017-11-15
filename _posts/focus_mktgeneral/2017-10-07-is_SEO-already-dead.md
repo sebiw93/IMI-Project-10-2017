@@ -53,21 +53,18 @@ Which valueable information can I deliver to what audience(s) where and at which
 </p>
 
 This brief question implies, that you need to have the resources to deliver a certain type of information. In that sense, your scope of content delivery is limited by the background of your business. If you present content just to adress an interesting target group, but this content doesn't match with your business image, you will loose credibility and with that your ranking. The following questions might be useful to ask yourself in order to get insights into the process of qualitative content creation:
-<br><br>
 
-<p id="bloggylist">
-1. What <b id="bloggylistb">image</b> does your site represent? What are you known for?
-<br>
-2. What kind of <b id="bloggylistb">content</b> are you capable to deliver in a unique way?
-<br>
-3. What types of <b id="bloggylistb">audiences</b> might be interested in this content and why? Can you group/ cluster them?
-<br>
-4. How do the factors <b id="bloggylistb">time and location</b> influence the audence's search behavior? 
-<br>
-5. Can you identify <b id="bloggylistb">patterns</b> in the audience's search behavior?
-</p>
 
-<br>
+<ol id="bloggylist">
+<li>What <b id="bloggylistb">image</b> does your site represent? What are you known for?</li>
+<li>What kind of <b id="bloggylistb">content</b> are you capable to deliver in a unique way?</li>
+<li>What types of <b id="bloggylistb">audiences</b> might be interested in this content and why? Can you group/ cluster them?</li>
+<li>How do the factors <b id="bloggylistb">time and location</b> influence the audence's search behavior? </li>
+<li>Can you identify <b id="bloggylistb">patterns</b> in the audience's search behavior?</li>
+</ol>
+
+
+
 Now, in order understand your actual position in the search engine rankings you might use Google Search Console, that monitors your SEO performance. Identifying audiences can be a sophisticated procedure aswell, but a keyword databse can give you a glimpse of an idea on what type of keywords people are looking for. Try to match these information and to identify logically linked fields of interst, that your website can serve. You should aim to provide information that presents benefits/ upsides of a topic (positive/ transformational motives) and/ or that solves the problem of a reader (negative/ informational motives), depending on the type of your offers. Transformational motives usually apply best to emotional topics, whereas the latter category rather matches informational ones by implication.
 
 <br>
