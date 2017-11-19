@@ -5,7 +5,7 @@
     }
     
     #bloggyimg{
-    height: 35vh;
+    height: 38vh;
 }
 
     .desc{
@@ -59,7 +59,7 @@
 }
     
     #bloggyimg{
-    height: 200px;
+    height: 230px;
     }
     
     #coauthor{
@@ -126,6 +126,10 @@
     .postheadbottom{
     margin-right: 10%;
 }
+    
+    #meedia div{
+    text-align: justify;
+}
   
     
     .postheadbottom h1{
@@ -181,7 +185,7 @@
     
     
     #bloggyimg{
-    width: 200px;
+    width: 250px;
     margin-top: -50px;
     margin-left: 10%;
     border: 3px solid white;
@@ -251,14 +255,17 @@
     
     .bloggy figcaption{
     margin-top: -115px;
-    margin-right: 34%;
-    text-align: right;
-    font-size: 140%;
+    text-align: left;
+    margin-left: 10%;
     }
     
     .postheadbottom{
     margin-right: 30%;
     }
+    
+      #meedia div{
+    text-align: left;
+}
     
     
 }

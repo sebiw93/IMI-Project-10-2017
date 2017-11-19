@@ -50,6 +50,7 @@ window.onclick = function(event) {
     
 
 window.onload = function () {
-        $("html, body").animate({scrollTop:$("#autoscrollhere").offset().top}, 1000); 
+        $("html, body").animate({scrollTop:$("#autoscrollhere").offset().top}, 1000);
     }
+
 
