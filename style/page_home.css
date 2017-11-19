@@ -76,6 +76,7 @@ margin-left: -40px;
     border: 10px solid rgba(247, 127, 141, 0.6)
 }
 
+
 #landing p{
     position: absolute;
     margin-top: 540px;
@@ -88,11 +89,17 @@ margin-left: -40px;
 }
 
 
-#marketingteaser, #techteaser, #leaderteaser, #inspireteaser{
-    padding-top: 110px;
+#marketingteaser, #techteaser, #leaderteaser, #organisationteaser{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    text-align: right;
+    margin-top: 90px;
+    right: 3%;
+    z-index: 1;
 }
 
-#marketingteaser h1, #techteaser h1, #leaderteaser h1, #inspireteaser h1{
+#marketingteaser h1, #techteaser h1, #leaderteaser h1, #organisationteaser h1{
     font-style: italic;
     font-size: 145%;
     font-family: sans-serif;
@@ -100,7 +107,7 @@ margin-left: -40px;
 
 }
 
-#marketingteaser p, #techteaser p, #leaderteaser p, #inspireteaser p{
+#marketingteaser p, #techteaser p, #leaderteaser p, #organisationteaser p{
     font-size: 85%;
 }
 

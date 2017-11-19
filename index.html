@@ -25,9 +25,9 @@ layout: standard
         <div id="slogan_buttons">
             <ul id="sloganlist">
             <a href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><li id="token_mktgeneral" style="color: #f77f8d">Marketing.</li></a>
-            <a href="{{site.baseurl}}/page_blog_tech/blog_tech.html"><li id="token_tech">Data.</li></a>
+            <a href="{{site.baseurl}}/page_blog_tech/blog_tech.html"><li id="token_tech">Tech.</li></a>
             <a href="{{site.baseurl}}/page_blog_leadership/blog_leadership.html"><li id="token_leadership">Leadership.</li></a>
-            <a href="{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"><li id="token_inspiration">Inspiration.</li></a>
+            <a href="{{site.baseurl}}/page_blog_organisation/blog_organisation.html"><li id="token_organisation">Organisation.</li></a>
             </ul>
             <br>
             <br>
@@ -49,7 +49,7 @@ layout: standard
     
     
     
-    <div class="triangle"></div>
+<!--    <div class="triangle"></div>-->
 <!--    <div class="quad"></div>-->
     <a id="img_to_flip_hash" href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html"><img id="img_to_flip" src="{{site.baseurl}}/media/imgs/sections/marketing.jpeg">
     <p id="img_to_flip_p">Explore the latest trends in Marketing & Communication.</p>
@@ -57,11 +57,8 @@ layout: standard
     
     
     
-    
-    
-    
-    
-    
+
+
     <div id="marketingteaser">
 <!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
     {% for page in site.posts %}
@@ -102,11 +99,11 @@ layout: standard
     {% endfor %}
     </div> 
     
-    <div id="inspireteaser" style="display: none;">
+    <div id="organisationteaser" style="display: none;">
 <!--    {% assign marketingcat = site.categories['#Marketing general'] %}-->
     {% for page in site.posts %}
-    {% if page.category contains '#Inspiration' %}
-    <p>Latest article in #Inspiration:  </p> 
+    {% if page.category contains '#Organisation' %}
+    <p>Latest article in #Organisation:  </p> 
         <a href="{{site.baseurl}}/{{page.permalink}}">
         <h1 style="padding-top: 20px;"><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
         </a >
@@ -126,18 +123,18 @@ layout: standard
                     var pics = [ "{{site.baseurl}}/media/imgs/sections/marketing.jpeg", 
                                 "{{site.baseurl}}/media/imgs/sections/tech.jpeg", 
                                 "{{site.baseurl}}/media/imgs/sections/leadership.jpg", 
-                                "{{site.baseurl}}/media/imgs/sections/Inspiration.jpg"];
+                                "{{site.baseurl}}/media/imgs/sections/Organisation.jpg"];
                     var picshash = [
                         "{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html", 
                         "{{site.baseurl}}/page_blog_tech/blog_tech.html", 
                         "{{site.baseurl}}/page_blog_leadership/blog_leadership.html",  
-                        "{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html"
+                        "{{site.baseurl}}/page_blog_organisation/blog_organisation.html"
                     ]
                     var picsp = [
                         "Explore the latest trends in Marketing & Communication.", 
                         "At the glipmse of a technological revolution? Discuss with us!", 
                         "How are the digital leaders paving the way for breakthough innovations?", 
-                        "Get inspired by a repertoire of futuristic ideas and brain- teasing food for thought."]
+                        "What organisational matters are relevant for advanced analytics in the age of Big Data?"]
                     
                     var flipimage = document.getElementById('img_to_flip');
                     var flipimagehash = document.getElementById('img_to_flip_hash');
@@ -146,32 +143,32 @@ layout: standard
                     var token_tech = document.getElementById('token_tech');
                     var token_mktgeneral = document.getElementById('token_mktgeneral');
                     var token_leadership = document.getElementById('token_leadership');
-                    var token_inspiration = document.getElementById('token_inspiration');
+                    var token_inspiration = document.getElementById('token_organisation');
                     
                     var marketingteaser = document.getElementById('marketingteaser');
                     var techteaser = document.getElementById('techteaser');
                     var leaderteaser = document.getElementById('leaderteaser');
-                    var inspireteaser = document.getElementById('inspireteaser');
+                    var inspireteaser = document.getElementById('organisationteaser');
                     
                     var picscategoryrow = [
                         document.getElementById('token_mktgeneral'), 
                         document.getElementById('token_tech'), 
                         document.getElementById('token_leadership'), 
-                        document.getElementById('token_inspiration'),
+                        document.getElementById('token_organisation'),
                     ]
                     
                     var teaserrow = [
                         document.getElementById('marketingteaser'), 
                         document.getElementById('techteaser'), 
                         document.getElementById('leaderteaser'), 
-                        document.getElementById('inspireteaser'),
+                        document.getElementById('organisationteaser'),
                     ]
                     
                     var teaserhashrow = [
                         '#marketingteaser', 
                         '#techteaser', 
                         '#leaderteaser', 
-                        '#inspireteaser',
+                        '#organisationteaser',
                     ]
                     
                     
@@ -190,12 +187,12 @@ layout: standard
                         token_tech.style.color = 'white';
                         token_mktgeneral.style.color = 'white';
                         token_leadership.style.color = 'white';
-                        token_inspiration.style.color = 'white';
+                        token_organisation.style.color = 'white';
                         
                         marketingteaser.style.display = 'none';
                         techteaser.style.display = 'none';
                         leaderteaser.style.display = 'none';
-                        inspireteaser.style.display = 'none';
+                        organisationteaser.style.display = 'none';
 
                         
                         setTimeout(function(){ picscategoryrow[i].style.color = '#f77f8d'; }, 50);
@@ -273,8 +270,29 @@ layout: standard
                       
        
 </section>  
+
+<hr style="width: 98%">
+
+
+
+
+<section style="margin-top: 50px;">
+    
+    <div class="container">
+
+<br>
+<h2>Food for thought</h2>
+<hr>
+        
+    </div>
+
+</section>
+
+
         
 <hr style="width: 98%">
+<hr style="width: 98%">
+
 
 <section id="feedback">
 

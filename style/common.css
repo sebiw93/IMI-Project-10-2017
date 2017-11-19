@@ -36,6 +36,7 @@ post-desc: Beschreibung der Einzel- Posts
 
 
 
+Language: British English
 
 
 Design- Schema:
@@ -114,6 +115,10 @@ p{
 
 /*----------------Navigation---------------*/
 
+nav{
+    z-index: 2;
+}
+
 nav ul li{
     display: inline-block;
     margin-left: 20px;
@@ -136,10 +141,11 @@ nav ul a:hover{
 #logoslogan{
     position: absolute;
     color: white;
-    font-weight: 700;
+    font-weight: 400;
     margin-left: 5%;
     padding-left: 150px;
     margin-top: 75px;
+    z-index: 1;
 }
 
 #logoslogan ul{
@@ -148,6 +154,7 @@ nav ul a:hover{
 }
 
 header img{
+    z-index: 2;
     position: absolute;
     height: 70px;
     border-radius: 0%;
