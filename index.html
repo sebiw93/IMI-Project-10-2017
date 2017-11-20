@@ -275,23 +275,45 @@ layout: standard
 
 
 
+<!-------------------------    Food 4 thought    -------------------------------->
 
 <section style="margin-top: 50px;">
     
-    <div class="container">
 
 <br>
 <h2>Food for thought</h2>
-<hr>
+<hr style="margin-bottom: 100px;">
         
-    </div>
+<div class="container" id="f4tsection">
+    
+     <div class="grades">
+            {% assign sorted_cats = site.categories | sort %}
+            {% for category in sorted_cats %}
+            {% if category contains '#Inspiration'  %}
+            {% assign sorted_posts = category[1] | reversed %}
+            {% for page in sorted_posts limit:8 %}
+       <div class="desktopGrades" id="{{page.permalink}}">
+            <h1 class="unnamed">{{ page.date | date: "%b %-d, %Y" }}   <a class="unnamed"><br>{{page.title }}</a></h1>
+            <p id="ONE{{page.permalink}}" class="unnamed" style="display: none;"><a>{{page.meta}}</a></p>
+        </div>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+             </div>
+    
+        </div>
 
 </section>
 
 
-        
-<hr style="width: 98%">
-<hr style="width: 98%">
+
+
+<!-------------------------    Food 4 thought Ende    -------------------------------->
+
+
+
+<hr style="width: 98%" >
+
 
 
 <section id="feedback">

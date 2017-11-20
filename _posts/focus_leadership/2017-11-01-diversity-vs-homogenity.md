@@ -3,7 +3,7 @@ layout: bloggy
 title: 'Diversity vs. homogenity in analytic teams'
 meta: Desc
 source: random source
-category: '#Leadership #Inspiration'
+category: '#Leadership'
 image: /media/imgs/articles/topic3.jpeg
 author: author_due
 permalink: leadership/diversity-vs-homogenity

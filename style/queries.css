@@ -115,6 +115,18 @@
 
 @media only screen and (max-width: 767px) {
     
+    
+    .desktopGrades h1 a{
+    font-size: 160%;
+}
+    .desktopGrades {
+    width: 49%;
+    }
+    
+    .desktopGrades h1{
+    margin-right: 10%;
+}
+    
     .dropdown {
     text-align: center;
     margin: 20px;
@@ -266,7 +278,18 @@
       #meedia div{
     text-align: left;
 }
+     .desktopGrades {
+    width: 49%;
+    }
     
+    
+.desktopGrades h1{
+    margin-right: 10%;
+}
+    
+    .desktopGrades h1 a{
+    font-size: 200%;
+}
     
 }
 
@@ -277,6 +300,8 @@
 
 
 @media only screen and (max-width: 480px) {
+    
+
     
     #logoslogan ul{
         margin-top: 50px;

@@ -25,9 +25,9 @@ layout: standard
 <section id="categories_blog">
 <ul>
 <li><a href="{{site.baseurl}}/page_blog_tech/blog_tech.html">#Tech</a></li>
-<li><a href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html">#Marketing general</a></li>
+<li><a href="{{site.baseurl}}/page_blog_mktgeneral/blog_mktgeneral.html">#Marketing</a></li>
 <li><a href="{{site.baseurl}}/page_blog_leadership/blog_leadership.html">#Leadership</a></li>
-<li><a href="{{site.baseurl}}/page_blog_inspiration/blog_inspiration.html">#Inspiration</a></li>
+<li><a href="{{site.baseurl}}/page_blog_organisation/blog_organisation.html">#Organisation</a></li>
 </ul>
 </section>        
     
@@ -54,6 +54,7 @@ layout: standard
 	<ul>
         <div class="posting-box">
 	  {% for page in site.posts %}
+        {% unless page.category contains '#Inspiration' %}
 	    {% unless page.next %}
         <br>
         <br>
@@ -78,7 +79,7 @@ layout: standard
         </div>
 	      {% endif %}
 	    {% endunless %}
-            
+           
         <br>
     <div class="post-box">
         <br>
@@ -95,6 +96,7 @@ layout: standard
                         <br>
                         <br>
                     </div> 
+        {% endunless %}
             {% endfor %}
         </div>
         
@@ -116,32 +118,4 @@ layout: standard
         
     
         
-        
-<!--    <div class="posting-box">
-    <br>
-    {% for page in site.posts %}
-        <br>
-        <br>
-    <div class="post-box">
-        <a href="{{site.baseurl}}/{{page.permalink}}">
-                    <img src="{{page.image}}">
-                    </a>
-                    
-                    <div class="post-desc">
-                        <h1><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title | markdownify}}</a></h1>
-                        <br>
-                        <span><p class="date">{{ page.date | date: "%b %-d, %Y" }}</p></span>
-                        <br>
-                        <br>
-                        {{page.meta}}
-                    </div>
-            {% endfor %}
-                </div>
-                <br>
-                <br>
-                 
-                    <form method="post" action="#">
-                    <a href="{{site.baseurl}}/index.html" class="btn btn-medium">Back</a>
-                    </form>    
-            
-    </div> -->    
+

@@ -1,9 +1,9 @@
 ---
 layout: bloggy
 title: 'Using data as a tool to detect customer habits'
-meta: 
+meta: Use data as a tool!
 source:
-category: '#Marketing general'
+category: '#Marketing general #Leadership'
 image: /media/imgs/articles/loops.jpg
 author: sebastian_weber
 permalink: marketing/data-as-a-tool-to-detect-costumer-habits
