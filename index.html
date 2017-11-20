@@ -240,6 +240,7 @@ layout: standard
     <div class="posting-box">
     <br>
     {% for page in site.posts limit:4 %}
+    {% unless page.category contains '#Inspiration' %}
         <br>
     <div class="post-box">
         <br>
@@ -256,6 +257,7 @@ layout: standard
                         <br>
                         <br>
                     </div> 
+            {% endunless %}
             {% endfor %}
         </div>
         
