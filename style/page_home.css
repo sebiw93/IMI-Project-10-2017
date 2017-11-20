@@ -44,27 +44,7 @@ margin-left: -40px;
     right: 5%; 
 }
 
-.quad {
-  right: 2%;
-  position: absolute;
-  padding-top: 150px;
-  margin-top: 318px;
-  border: solid rgba(212, 76, 92, 0.7);
-  border-left-width: 345px;
-  border-top-width: 30px;
-}
 
-.triangle {
-  right: 0;
-  position: absolute;
-  margin-right: 0%;
-  padding-top: 450px;
-  margin-top: 270px;
-  border: solid rgba(212, 76, 92, 0.7);
-  border-left-width: 300px;
-  border-top-width: 30px;
-  border-top-color: transparent;
-}
 
 #img_to_flip{
     position: absolute;
@@ -131,8 +111,15 @@ margin-left: -40px;
     margin-left: 1%;
     margin-top: 1%;
     transition: background-color 1.0s;  
+    }
+
+.gradesdue{
+    margin-top: 60px;
+    max-height: 420px;
     overflow-y: auto;
+    margin-right: -20px;
 }
+
 
 .desktopGrades:hover{
     background-color: rgba(247, 127, 141, 0.9);
